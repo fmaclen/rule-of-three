@@ -20,7 +20,7 @@ input.calculator__input::-webkit-inner-spin-button {
 }
 
 input.calculator__input,
-p.calculator__result {
+input.calculator__result {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   background-color: transparent;
   font-size: 11px;
@@ -38,7 +38,7 @@ input.calculator__input:focus  {
   border-color: #135BC5;
 }
 
-p.calculator__result {
+input.calculator__result {
   color: rgba(255,255,255,.5);
   background-color: rgba(255,255,255,.05);
   margin: 0;
