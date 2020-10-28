@@ -2,21 +2,22 @@
   <head>
     <title>Rule of Three</title>
     <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
   </head>
   <body class="app">
     <form class="calculator">
-      <input type="text" class="calculator__input" placeholder="Value A">
+      <input type="number" class="calculator__input" placeholder="A" id="valueA">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 8.5H15.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.5 3.5L15.5 8.5L10.5 13.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <input type="text" class="calculator__input" placeholder="Value B">
-      <input type="text" class="calculator__input" placeholder="Value C">
+      <input type="number" class="calculator__input" placeholder="B" id="valueB">
+      <input type="number" class="calculator__input" placeholder="Y" id="valueY">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 8.5H15.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.5 3.5L15.5 8.5L10.5 13.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <p class="calculator__result">?</p>
+      <p class="calculator__result" id="valueX">X</p>
     </form>
   </body>
 </html>
