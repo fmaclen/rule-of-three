@@ -10,7 +10,7 @@ form.calculator {
   padding: 8px;
   margin: 0;
   background-color: #282828;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 input.calculator__input::-webkit-outer-spin-button,
@@ -23,8 +23,8 @@ input.calculator__input,
 input.calculator__result {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   background-color: transparent;
-  font-size: 11px;
-  border: 1px solid rgba(255,255,255,.05);
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 6px 8px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -40,7 +40,7 @@ input.calculator__input:focus  {
 
 input.calculator__result {
   color: rgba(255,255,255,.5);
-  background-color: rgba(255,255,255,.05);
+  background-color: rgba(255,255,255,.1);
   margin: 0;
 }
 

@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded",function() {
   function calculate() {
     if (valueA.value != 0 && valueB.value.value != 0 && valueY.value != 0) {
       let result = (valueY.value * valueB.value) / valueA.value
-      console.log(result)
-      valueX.value = Math.round(result)
+      valueX.value = (result).toFixed(2)
     } else {
       valueX.value = "X"
     }

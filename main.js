@@ -6,7 +6,7 @@ let tray, window
 const createWindow = () => {
   window = new BrowserWindow({
     width: 248,
-    height: 88,
+    height: 90,
     show: false,
     frame: false,
     fullscreenable: false,
