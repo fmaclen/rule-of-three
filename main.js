@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Tray, nativeImage } = require('electron')
+const { app, BrowserWindow, Tray, nativeImage, nativeTheme } = require('electron')
 const path = require('path')
 
 let tray, window
@@ -24,20 +24,23 @@ const createWindow = () => {
   window.on('blur', () => window.hide())
 }
 
+// Create tray icon
 const createTray = () => {
-  const icon = path.join(__dirname, 'assets/icon.png')
+  const icon = setThemedIcon()
   const nImage = nativeImage.createFromPath(icon)
 
   tray = new Tray(nImage)
   tray.on('click', (event) => toggleWindow())
 }
 
+// Set position and reveal window
 const showWindow = () => {
   const position = windowPosition()
   window.setPosition(position.x, position.y)
   window.show()
 }
 
+// Set window positoin
 const windowPosition = () => {
   const windowBounds = window.getBounds()
   const trayBounds = tray.getBounds()
@@ -48,14 +51,32 @@ const windowPosition = () => {
   return {x, y}
 }
 
+// Show/hide window
 const toggleWindow = () => {
   window.isVisible() ? window.hide() : showWindow()
 }
 
-////////////////////////////////////////////////////////////////////////////////
+// Determine the icon asset based on system theme
+const setThemedIcon = () => {
+  if (nativeTheme.shouldUseDarkColors) {
+    return path.join(__dirname, 'assets/icon-dark.png')
+  } else {
+    return path.join(__dirname, 'assets/icon-light.png')
+  }
+}
 
+// Update icon if the system theme changes
+nativeTheme.on('updated', (e) => {
+  const icon = setThemedIcon()
+  const nImage = nativeImage.createFromPath(icon)
+
+  tray.setImage(nImage)
+})
+
+// Create the tray and window
 app.whenReady().then(createTray).then(createWindow)
 
+// Close the window
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
@@ -68,4 +89,5 @@ app.on('activate', () => {
   }
 })
 
+// Hide the app in the dock
 app.dock.hide()
