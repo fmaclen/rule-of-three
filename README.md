@@ -1,6 +1,8 @@
 # rule-of-three
 **A tiny direct proportion calculator that runs in the tray bar.**
 
+![Desktop](https://user-images.githubusercontent.com/1434675/97485373-49ead100-1917-11eb-876c-e6fa3967570b.png)
+
 The rule of three is used to calculate the corresponding values proportionally.
 
 It is also known as **Direct Proportion**, which means that any increase in the known values increases the unknown value at the same rate.
