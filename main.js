@@ -58,11 +58,8 @@ const toggleWindow = () => {
 
 // Determine the icon asset based on system theme
 const setThemedIcon = () => {
-  if (nativeTheme.shouldUseDarkColors) {
-    return path.join(__dirname, 'assets/icon-dark.png')
-  } else {
-    return path.join(__dirname, 'assets/icon-light.png')
-  }
+  const icon = nativeTheme.shouldUseDarkColors ? 'assets/icon-dark.png' : 'assets/icon-light.png'
+  return path.join(__dirname, icon)
 }
 
 // Update icon if the system theme changes
