@@ -6,10 +6,11 @@ let tray, window
 const createWindow = () => {
   window = new BrowserWindow({
     width: 248,
-    height: 80,
+    height: 88,
     show: false,
     frame: false,
     fullscreenable: false,
+    transparent: true,
     resizable: false,
     webPreferences: {
       nodeIntegration: true
@@ -18,6 +19,9 @@ const createWindow = () => {
 
   window.loadFile('app/index.html')
   window.on('closed', () => window = null)
+
+  // Hide the window when it loses focus
+  window.on('blur', () => window.hide())
 }
 
 const createTray = () => {
