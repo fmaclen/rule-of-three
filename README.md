@@ -1,7 +1,7 @@
 # rule-of-three
 **A tiny direct proportion calculator that runs in the tray bar.**
 
-![Desktop](https://user-images.githubusercontent.com/1434675/97485602-946c4d80-1917-11eb-8644-238c00f46b62.png)
+![Desktop](https://user-images.githubusercontent.com/1434675/97509697-399b1c00-1940-11eb-865f-bb1edadd81c4.png)
 
 The rule of three is used to calculate the corresponding values proportionally.
 
