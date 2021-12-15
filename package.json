@@ -1,7 +1,7 @@
 {
   "name": "rule-of-three",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A tiny direct proportion calculator that runs in the tray bar",
   "main": "main.js",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
@@ -12,7 +12,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "^10.1.5"
+    "electron": "^16.0.4"
   },
   "scripts": {
     "start": "electron-forge start",
