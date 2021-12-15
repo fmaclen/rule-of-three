@@ -2,15 +2,64 @@ body.app {
   margin: 0;
 }
 
-form.calculator {
+div.calculator {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  background-color: #282828;
+  border-radius: 8px;
+  padding-top: 12px;
+}
+
+nav.calculator__nav {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+button.calculator__button {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+  padding: 6px 32px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #FFF;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+button.calculator__button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.calculator__button:disabled {
+  pointer-events: none;
+  background-color: transparent;
+  color: #888;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+button.calculator__button:disabled svg line,
+button.calculator__button:disabled svg polyline {
+  stroke: #888;
+  fill: #888;
+}
+
+form.calculator__form {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   grid-gap: 8px;
   align-items: center;
-  padding: 8px;
-  margin: 0;
-  background-color: #282828;
-  border-radius: 8px;
+  margin: 0 12px;
 }
 
 input.calculator__input::-webkit-outer-spin-button,
@@ -36,6 +85,10 @@ input.calculator__result {
 input.calculator__input:active,
 input.calculator__input:focus  {
   border-color: #135BC5;
+}
+
+input.calculator__input:hover {
+  border-color: rgba(255, 255, 255, 0.2);;
 }
 
 input.calculator__result {

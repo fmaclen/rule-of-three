@@ -1,24 +1,95 @@
 <html>
   <head>
     <title>Rule of Three</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
     <script src="app.js"></script>
   </head>
   <body class="app">
     <div class="arrow-up"></div>
-    <form class="calculator">
-      <input type="number" class="calculator__input" placeholder="A" id="valueA" autofocus>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.5 8.5H15.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M10.5 3.5L15.5 8.5L10.5 13.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <input type="number" class="calculator__input" placeholder="B" id="valueB">
-      <input type="number" class="calculator__input" placeholder="Y" id="valueY">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.5 8.5H15.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M10.5 3.5L15.5 8.5L10.5 13.5" stroke="#444444" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <input type="text" class="calculator__result" placeholder="X" id="valueX" disabled>
-    </form>
+
+    <div class="calculator">
+      <form class="calculator__form">
+        <input
+          type="number"
+          class="calculator__input"
+          placeholder="A"
+          id="valueA"
+          autofocus
+        />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 8.5H15.5"
+            stroke="#444444"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.5 3.5L15.5 8.5L10.5 13.5"
+            stroke="#444444"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <input
+          type="number"
+          class="calculator__input"
+          placeholder="B"
+          id="valueB"
+        />
+        <input
+          type="number"
+          class="calculator__input"
+          placeholder="Y"
+          id="valueY"
+        />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 8.5H15.5"
+            stroke="#444444"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.5 3.5L15.5 8.5L10.5 13.5"
+            stroke="#444444"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <input
+          type="text"
+          class="calculator__result"
+          placeholder="X"
+          id="valueX"
+          disabled
+        />
+      </form>
+
+      <nav class="calculator__nav">
+        <button class="calculator__button" id="calculator__button--reverse" disabled>
+          Reverse <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" stroke-width="1"><g stroke-width="1" transform="translate(0, 0)"><polyline points="9 6 11.5 8.5 9 11" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" data-color="color-2" stroke-width="1"></polyline> <line x1="0.5" y1="8.5" x2="11.5" y2="8.5" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" data-color="color-2" stroke-width="1"></line> <polyline points="3 6 0.5 3.5 3 1" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></polyline> <line x1="0.5" y1="3.5" x2="11.5" y2="3.5" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line></g></svg>
+        </button>
+
+        <button class="calculator__button" id="calculator__button--reset" disabled>
+          Reset <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" stroke-width="1"><g stroke-width="1" transform="translate(0, 0)"><line x1="0.5" y1="2.5" x2="11.5" y2="2.5" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" data-color="color-2" stroke-width="1"></line> <polyline points="4.5 2.5 4.5 0.5 7.5 0.5 7.5 2.5" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" data-color="color-2" stroke-width="1"></polyline> <path d="M9.5,4.5v6a1,1,0,0,1-1,1h-5a1,1,0,0,1-1-1v-6" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></g></svg>
+        </button>
+      </nav>
+    </div>
   </body>
 </html>
