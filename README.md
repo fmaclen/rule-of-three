@@ -1,8 +1,7 @@
 # rule-of-three
 **A tiny direct proportion calculator for macOS that runs in the tray bar.**
 
-<img width="320" alt="Screen Shot 2021-12-15 at 9 27 43 AM" src="https://user-images.githubusercontent.com/1434675/146187439-74abc918-a8c7-4778-852a-02069f388b52.png">
-<img width="320" alt="Screen Shot 2021-12-15 at 9 27 49 AM" src="https://user-images.githubusercontent.com/1434675/146187442-2f75d004-4113-4d8f-9f71-511a5cb9c639.png">
+<img width="320" alt="Screen Shot 2021-12-15 at 9 27 43 AM" src="https://user-images.githubusercontent.com/1434675/146187439-74abc918-a8c7-4778-852a-02069f388b52.png"> <img width="320" alt="Screen Shot 2021-12-15 at 9 27 49 AM" src="https://user-images.githubusercontent.com/1434675/146187442-2f75d004-4113-4d8f-9f71-511a5cb9c639.png">
 
 The rule of three is used to calculate the corresponding values proportionally.
 
