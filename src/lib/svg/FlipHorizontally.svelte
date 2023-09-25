@@ -1,0 +1,52 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px"
+	y="0px"
+	width="12px"
+	height="12px"
+	viewBox="0 0 12 12"
+	stroke-width="1"
+	><g stroke-width="1" transform="translate(0, 0)"
+		><polyline
+			points="9 6 11.5 8.5 9 11"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			data-color="color-2"
+			stroke-width="1"
+		/>
+		<line
+			x1="0.5"
+			y1="8.5"
+			x2="11.5"
+			y2="8.5"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			data-color="color-2"
+			stroke-width="1"
+		/>
+		<polyline
+			points="3 6 0.5 3.5 3 1"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="1"
+		/>
+		<line
+			x1="0.5"
+			y1="3.5"
+			x2="11.5"
+			y2="3.5"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="1"
+		/></g
+	></svg
+>
