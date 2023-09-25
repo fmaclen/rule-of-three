@@ -1,0 +1,41 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px"
+	y="0px"
+	width="12px"
+	height="12px"
+	viewBox="0 0 12 12"
+	stroke-width="1"
+	><g stroke-width="1" transform="translate(0, 0)"
+		><line
+			x1="0.5"
+			y1="2.5"
+			x2="11.5"
+			y2="2.5"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			data-color="color-2"
+			stroke-width="1"
+		/>
+		<polyline
+			points="4.5 2.5 4.5 0.5 7.5 0.5 7.5 2.5"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			data-color="color-2"
+			stroke-width="1"
+		/>
+		<path
+			d="M9.5,4.5v6a1,1,0,0,1-1,1h-5a1,1,0,0,1-1-1v-6"
+			fill="none"
+			stroke="#999999"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="1"
+		/></g
+	></svg
+>
