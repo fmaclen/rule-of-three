@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { appWindow, LogicalSize } from '@tauri-apps/api/window';
+	import { appWindow, LogicalSize, LogicalPosition } from '@tauri-apps/api/window';
 	import { onMount } from 'svelte';
 	import Arrow from '$lib/svg/Arrow.svelte';
 	import Trash from '$lib/svg/Trash.svelte';
@@ -38,8 +38,13 @@
 	$: if (valueA || valueB || valueY) calculate();
 
 	let windowHeight: number;
-	onMount(() => windowHeight = document.body.scrollHeight);
-	$: appWindow.setSize(new LogicalSize(320, windowHeight));
+
+	onMount(async () => {
+		windowHeight = document.body.scrollHeight
+		await appWindow.setSize(new LogicalSize(320, windowHeight));
+		await appWindow.setPosition(new LogicalPosition(0, 0));
+	});
+
 </script>
 
 <div class="app">
@@ -79,6 +84,7 @@
 			</button>
 		</nav>
 	</div>
+
 </div>
 
 <style>
@@ -87,7 +93,7 @@
 		gap: 12px;
 		flex-direction: column;
 		background-color: #282828;
-		border-radius: 8px;
+		border-radius: 6px;
 		padding-top: 12px;
 	}
 
@@ -183,6 +189,6 @@
 		border-left: 6px solid transparent;
 		border-right: 6px solid transparent;
 		border-bottom: 6px solid #282828;
-		margin: 4px auto 0 auto;
+		margin-inline: auto;
 	}
 </style>

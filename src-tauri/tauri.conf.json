@@ -14,7 +14,8 @@
 		"allowlist": {
 			"all": false,
 			"window": {
-				"setSize": true
+				"setSize": true,
+				"setPosition": true
 			}
 		},
 		"bundle": {
@@ -63,7 +64,8 @@
 				"fullscreen": false,
 				"resizable": false,
 				"decorations": false,
-				"transparent": false
+				"transparent": true,
+				"skipTaskbar": false
 			}
 		],
 		"macOSPrivateApi": true,
