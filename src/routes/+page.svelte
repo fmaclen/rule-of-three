@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { appWindow, LogicalSize } from '@tauri-apps/api/window';
+	import { onMount } from 'svelte';
 	import Arrow from '$lib/svg/Arrow.svelte';
 	import Trash from '$lib/svg/Trash.svelte';
 	import FlipHorizontally from '$lib/svg/FlipHorizontally.svelte';
@@ -12,7 +14,7 @@
 		if (typeof valueA !== 'number' || typeof valueB !== 'number' || typeof valueY !== 'number')
 			return;
 
-			if (valueA !== 0 && valueB !== 0 && valueY !== 0) {
+		if (valueA !== 0 && valueB !== 0 && valueY !== 0) {
 			let result: number = (valueY * valueB) / valueA;
 			valueX = result.toFixed(2);
 		} else {
@@ -34,6 +36,10 @@
 	}
 
 	$: if (valueA || valueB || valueY) calculate();
+
+	let windowHeight: number;
+	onMount(() => windowHeight = document.body.scrollHeight);
+	$: appWindow.setSize(new LogicalSize(320, windowHeight));
 </script>
 
 <div class="app">
