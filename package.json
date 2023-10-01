@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@tauri-apps/api": "^1.5.0"
+		"@tauri-apps/api": "^1.5.0",
+		"tauri-plugin-positioner-api": "^0.2.7"
 	}
 }

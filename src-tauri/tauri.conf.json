@@ -65,7 +65,8 @@
 				"resizable": false,
 				"decorations": false,
 				"transparent": true,
-				"skipTaskbar": false
+				"skipTaskbar": false,
+				"visible": false
 			}
 		],
 		"macOSPrivateApi": true,
